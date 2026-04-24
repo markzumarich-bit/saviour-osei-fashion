@@ -1,0 +1,106 @@
+h1{
+ text-align: center;
+ font-size: 40px;
+ color: #1255A2;
+}
+
+.search{
+   width: max-content;
+   display: flex;
+   padding: 14px;
+   border-radius: 28px;
+   background: #1255A2;
+   align-items: center;
+   transition: background 0.3s;
+   margin: 20px auto;
+}
+
+  .search-input{
+       font-size: 16px;
+       color: #1A66C2;
+       outline: none;
+       border: none;
+       width: 90%;
+      
+}
+     
+nav{
+  list-style-type: none;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  background-color: #1255A2;
+  overflow: hidden;
+}
+   h4{
+  float: left;
+  margin: 0;
+}
+h4 a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+ h4 a:hover{
+    background-color: #B9F2FF;
+    color: 1255A2;
+}
+
+/* The main blue background card */
+.snapshot-card {
+  background-color: #2a75bb; /* Adjust to match the blue in your image */
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Creating the 2x2 grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Two equal columns */
+  gap: 10px; /* Space between the boxes */
+  margin-top: 15px;
+ 
+}
+
+/* Individual boxes for the stats */
+.stat-box {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.1;
+  cursor: pointer;
+}
+
+.count {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('og12.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+  

@@ -1,0 +1,49 @@
+.fashion-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  /* Defines 2 columns */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas: 
+    "top-left top-right"
+    "bottom-video bottom-video";
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: auto;
+  min-height: 250px;
+}
+
+.img-1 { grid-area: top-left; }
+.img-2 { grid-area: top-right; }
+
+.large-video { 
+  grid-area: bottom-video; 
+}
+
+.item img, .item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Mobile: Stack everything in one column */
+@media (max-width: 768px) {
+  .fashion-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "top-left"
+      "top-right"
+      "bottom-video";
+       gap: 15px;
+       width: 95%;
+  }
+}
