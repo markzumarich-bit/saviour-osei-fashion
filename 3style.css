@@ -1,0 +1,63 @@
+       /* Style.css */
+:root {
+    --gold: #d4af37;
+    --royal-blue: #1a2a6c;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    font-family: 'Playfair Display', serif; /* Classic font */
+    padding: 40px;
+}
+
+.brand-title {
+    text-align: center;
+    letter-spacing: 4px;
+    color: var(--royal-blue);
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Side-by-side on desktop */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.display-area video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.playlist {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.video-item:hover {
+    background: rgba(26, 42, 108, 0.1);
+}
+
+.video-item.active {
+    background: var(--royal-blue);
+    color: white;
+}
+
+/* Responsive adjustment for phones */
+@media (max-width: 800px) {
+    .layout-grid { grid-template-columns: 1fr; }
+}
